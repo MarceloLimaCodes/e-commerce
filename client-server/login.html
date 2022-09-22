@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <h1>E-COMMERCE</h1>
+        <p>Tudo aquilo que voce precisa comprar no conforto de casa</p>
+    </header>
+    <main>
+        <section>
+            <div id="login">
+                <h1>Entrar</h1>
+                <div id="error"></div>
+                <label for="email">E-mail</label>
+                <input id="email" type="text"><br>
+                <label for="password">Senha</label>
+                <input id="password" type="password"><br>
+                <input id="entrar-button" type="button" value="Entrar" onclick="login()">
+                <p>
+                    não tem uma conta? <a href="register.html">registre-se</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Site criado por Marcelo Lima
+    </footer>
+</body>
+<script src="src/auth.js"></script>
+</html>

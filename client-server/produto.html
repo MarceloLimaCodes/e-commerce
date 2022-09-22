@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header onclick="outMenu()">
+        <h1>E-COMMERCE</h1>
+        <p>Tudo aquilo que voce precisa comprar no conforto de casa</p>
+    </header>
+    <nav>
+        <a id="home" href="./index.html">Home</a>
+        <a id="fale-conosco" href="#">Fale Conosco</a>
+        <button id="login" onclick="menu()"></button>
+    </nav>
+    <main id="main" onclick="outMenu()">
+        <section id="pesquisa">
+            <input id="pesquisar-text" type="text">
+            <input id="pesquisar-button" type="button" value="Pesquisar" onclick="pesquisar()">
+            <div id="result-pesquisa"></div>
+        </section>
+        <section id="one-product" onclick="outMenu()">
+            <h1>Produto</h1>
+        </section>
+        <section class="carrinho-div"></section>
+        <input type="button" value="Atualizar Carrinho" onclick="atualizarCarrinho()">
+    </main>
+    <footer>
+        Site criado por Marcelo Lima
+    </footer>
+</body>
+<script src="src/produto.js"></script>
+</html>
